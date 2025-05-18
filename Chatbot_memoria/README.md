@@ -8,15 +8,10 @@
 
 A proposta original desse projeto era criar um chatbot para dicas de viagens usando o Microsoft copilot Studio. Mas o que é o Copilot Studio? Segundo o Microsoft Copilot:
 
-```console
-Prompt:
+>**Prompt:** Descreva de forma simples o Microsoft copilot studio no contexto da criação de chats com fluxo de conversa
+>
+>**Resposta:** O Microsoft Copilot Studio é uma plataforma que permite a criação de chatbots personalizados com fluxos de conversa estruturados. Ele oferece uma interface intuitiva onde você pode definir como o chatbot interage com os usuários, criando respostas automáticas e processos de tomada de decisão com base em regras ou inteligência artificial. Isso facilita a criação de experiências de conversa naturais e eficazes para atendimento ao cliente, suporte interno e diversas outras aplicações.
 
-Descreva de forma simples o Microsoft copilot studio no contexto da criação de chats com fluxo de conversa
-
-Resposta: 
-
-O Microsoft Copilot Studio é uma plataforma que permite a criação de chatbots personalizados com fluxos de conversa estruturados. Ele oferece uma interface intuitiva onde você pode definir como o chatbot interage com os usuários, criando respostas automáticas e processos de tomada de decisão com base em regras ou inteligência artificial. Isso facilita a criação de experiências de conversa naturais e eficazes para atendimento ao cliente, suporte interno e diversas outras aplicações.
-```
 
 Como não tenho acesso ao Copilot Studio por não ter uma conta de estudante nem corporativa, vou desenvolver um chatbot com memória com base em inteligência artificial.
 

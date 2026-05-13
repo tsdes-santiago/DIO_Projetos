@@ -64,7 +64,7 @@ Certifique-se de ter o **Podman** (ou Docker) instalado.
 
 1. **Baixe os arquivos do projeto:**
 
-Disponível no meu [Github](https://https://github.com/tsdes-santiago/DIO_Projetos/tree/main/FastAPIBanco).
+Disponível no meu [Github](https://github.com/tsdes-santiago/DIO_Projetos/tree/main/FastAPIBanco).
 
 
 2. **Configure as variáveis de ambiente:**

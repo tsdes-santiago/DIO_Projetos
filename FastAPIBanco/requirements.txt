@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy[asyncio]
+asyncpg
+python-dotenv
+pydantic-settings
+validate-docbr
+passlib[argon2]
+python-jose[cryptography]
+python-multipart

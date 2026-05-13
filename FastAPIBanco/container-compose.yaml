@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  db:
+    image: docker.io/library/postgres:15-alpine
+    container_name: banco_api_pg
+    # O Podman lerá o .env e passará as variáveis para o Postgres
+    env_file:
+      - .env
+    environment:
+      # Mapeamos as variáveis do .env para as que o Postgres espera oficialmente
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  api:
+    build: .
+    container_name: fastapi_bancaria
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    # O backend usará as variáveis para montar a string de conexão
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: streamlit_bancario
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+
+volumes:
+  postgres_data:
+

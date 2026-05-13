@@ -1,0 +1,16 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+# Instala dependências de sistema se necessário
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Instala as bibliotecas Python
+RUN pip install --no-cache-dir streamlit requests pandas
+
+# O volume será mapeado no compose, então não precisamos dar COPY aqui no dev
+EXPOSE 8501
+
+CMD ["streamlit", "run", "app_gui.py", "--server.address", "0.0.0.0"]

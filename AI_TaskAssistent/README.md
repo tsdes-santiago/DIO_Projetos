@@ -44,8 +44,6 @@ AI_TaskAssistent/
 ├── app.py
 ├── agents.py
 ├── database.py
-├── prompts.py
-├── utils.py
 ├── data/
 │   └── tasks.db
 ├── pyproject.toml

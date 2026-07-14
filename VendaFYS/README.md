@@ -26,9 +26,10 @@ Quero que a IA gere estratégias de upsell para a bebida FYS do grupo Heineken, 
 
 ## ✨ Versão pronta para copiar
 
-```console
-Quero que a IA gere estratégias de upsell para a bebida FYS do grupo Heineken, voltadas para vendedores e promotores de ponto de venda, com o objetivo de aumentar o ticket médio e incentivar a compra de versões adicionais ou complementares do produto. Considere o seguinte contexto: vendas em supermercados, bares e eventos, com foco em público jovem-adulto e consumo casual. O conteúdo deve ter formato de lista prática com exemplos de abordagem, frases prontas e sugestões de combinações de produtos (combos). Evite linguagem técnica ou teórica; priorize aplicação direta, persuasão leve e situações reais de venda.
-```
+> Quero que a IA gere estratégias de upsell para a bebida FYS do grupo Heineken, voltadas para vendedores e promotores de ponto de venda, com o objetivo de aumentar o ticket médio e incentivar a compra de versões adicionais ou complementares do produto.  
+> Considere o seguinte contexto: vendas em supermercados, bares e eventos, com foco em público jovem-adulto e consumo casual.  
+> O conteúdo deve ter formato de lista prática com exemplos de abordagem, frases prontas e sugestões de combinações de produtos (combos).  
+> Evite linguagem técnica ou teórica; priorize aplicação direta, persuasão leve e situações reais de venda.
 
 # :robot: Exemplot de saída
 

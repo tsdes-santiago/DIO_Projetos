@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar ativo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white min-h-screen p-8" style="font-family: 'Space Mono', monospace;">
+    <div class="max-w-2xl mx-auto">
+        <div class="flex items-center justify-between mb-8">
+            <div>
+                <h1 class="text-3xl font-bold">Comprar ativo</h1>
+                <p class="text-cyan-300/80">Olá, {{ username }}</p>
+            </div>
+            <a href="/" class="px-4 py-2 rounded-xl border border-cyan-400/30 text-cyan-400 hover:bg-cyan-500/10">
+                Início
+            </a>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+            <form action="/buy" method="post" class="space-y-6">
+                <div>
+                    <label for="asset_id" class="block text-sm text-white/50 mb-2">Ativo</label>
+                    <select name="asset_id" id="asset_id" required
+                            class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/10 text-white focus:outline-none focus:border-cyan-400/50">
+                        <option value="" disabled selected>Selecione um ativo</option>
+                        {% for asset in assets %}
+                        <option value="{{ asset.id }}">{{ asset.name }} (R$ {{ asset.unit_value }})</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div>
+                    <label for="quantity" class="block text-sm text-white/50 mb-2">Quantidade</label>
+                    <input type="number" name="quantity" id="quantity" step="any" min="0.0001" required
+                           class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/10 text-white focus:outline-none focus:border-cyan-400/50"
+                           placeholder="Ex: 0.5">
+                </div>
+
+                <div>
+                    <label for="buy_price" class="block text-sm text-white/50 mb-2">Preço unitário (R$)</label>
+                    <input type="number" name="buy_price" id="buy_price" step="any" min="0.01" required
+                           class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/10 text-white focus:outline-none focus:border-cyan-400/50"
+                           placeholder="Ex: 250000.00">
+                </div>
+
+                <button type="submit"
+                        class="w-full px-4 py-3 rounded-xl bg-cyan-500/20 border border-cyan-400/40 text-cyan-300 hover:bg-cyan-500/30 font-semibold">
+                    Registrar compra
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

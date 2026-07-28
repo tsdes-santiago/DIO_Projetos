@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS positions (
+  id          BIGSERIAL PRIMARY KEY NOT NULL,
+  asset_id    BIGINT NOT NULL REFERENCES assets(id),
+  quantity    DOUBLE PRECISION NOT NULL,
+  avg_buy_price DOUBLE PRECISION NOT NULL,
+  last_buy_at TIMESTAMPTZ NOT NULL
+);

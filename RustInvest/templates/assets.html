@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white min-h-screen p-8" style="font-family: 'Space Mono', monospace;">
+    <div class="max-w-4xl mx-auto">
+        <div class="flex items-center justify-between mb-8">
+            <div>
+                <h1 class="text-3xl font-bold">Ativos</h1>
+                <p class="text-cyan-300/80">Olá, {{ username }}</p>
+            </div>
+            <a href="/" class="px-4 py-2 rounded-xl border border-cyan-400/30 text-cyan-400 hover:bg-cyan-500/10">
+                Início
+            </a>
+        </div>
+
+        {% if assets.len() == 0 %}
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <p class="text-white/70">Nenhum ativo cadastrado.</p>
+        </div>
+        {% else %}
+        <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <table class="w-full">
+                <thead class="bg-white/5">
+                    <tr class="text-left">
+                        <th class="px-6 py-3">ID</th>
+                        <th class="px-6 py-3">Nome</th>
+                        <th class="px-6 py-3">Valor unitário</th>
+                        <th class="px-6 py-3">Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for asset in assets %}
+                    <tr class="border-t border-white/10">
+                        <td class="px-6 py-3">{{ asset.id }}</td>
+                        <td class="px-6 py-3">{{ asset.name }}</td>
+                        <td class="px-6 py-3">R$ {{ asset.unit_value }}</td>
+                        <td class="px-6 py-3">{{ asset.quantity }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

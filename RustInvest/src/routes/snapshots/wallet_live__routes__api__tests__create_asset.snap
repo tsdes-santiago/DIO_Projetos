@@ -1,0 +1,11 @@
+---
+source: src/routes/api.rs
+assertion_line: 143
+expression: new_asset
+---
+{
+  "id": 1,
+  "name": "Bitcoin",
+  "unit_value": 10.0,
+  "quantity": 100.0
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white min-h-screen p-8" style="font-family: 'Space Mono', monospace;">
+    <div class="max-w-4xl mx-auto">
+        <header class="flex items-center justify-between mb-8">
+            <div>
+                <h1 class="text-3xl font-bold">Carteira de Investimentos</h1>
+                <p class="text-cyan-300/80">Olá, {{ username }}</p>
+            </div>
+            <div class="flex gap-4">
+                <a href="/buy" class="px-4 py-2 rounded-xl bg-cyan-500/20 border border-cyan-400/40 text-cyan-300 hover:bg-cyan-500/30">
+                    + Comprar ativo
+                </a>
+                <a href="/purchases" class="px-4 py-2 rounded-xl border border-cyan-400/30 text-cyan-400 hover:bg-cyan-500/10">
+                    Histórico
+                </a>
+                <a href="/assets" class="px-4 py-2 rounded-xl border border-cyan-400/30 text-cyan-400 hover:bg-cyan-500/10">
+                    Ativos
+                </a>
+            </div>
+        </header>
+
+        <section class="grid gap-6 md:grid-cols-3 mb-8">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+                <h2 class="text-sm text-white/50 mb-1">Total investido</h2>
+                <p class="text-2xl font-bold">R$ {{ total_invested }}</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+                <h2 class="text-sm text-white/50 mb-1">Valor atual</h2>
+                <p class="text-2xl font-bold">R$ {{ total_value }}</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+                <h2 class="text-sm text-white/50 mb-1">Ganho/Perda</h2>
+                <p class="text-2xl font-bold {{ total_gain_class }}">R$ {{ total_gain }}</p>
+            </div>
+        </section>
+
+        <section class="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+            <div class="px-6 py-4 border-b border-white/10">
+                <h2 class="text-xl font-semibold">Ativos</h2>
+            </div>
+            <table class="w-full">
+                <thead class="bg-white/5">
+                    <tr class="text-left text-sm text-white/50">
+                        <th class="px-6 py-3">Ativo</th>
+                        <th class="px-6 py-3">Quantidade</th>
+                        <th class="px-6 py-3">Valor unitário</th>
+                        <th class="px-6 py-3">Investido</th>
+                        <th class="px-6 py-3">Valor atual</th>
+                        <th class="px-6 py-3">Ganho/Perda</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for asset in assets %}
+                    <tr class="border-t border-white/10">
+                        <td class="px-6 py-3 font-medium">{{ asset.name }}</td>
+                        <td class="px-6 py-3">{{ asset.quantity }}</td>
+                        <td class="px-6 py-3">R$ {{ asset.unit_value }}</td>
+                        <td class="px-6 py-3">R$ {{ asset.invested }}</td>
+                        <td class="px-6 py-3">R$ {{ asset.current_value }}</td>
+                        <td class="px-6 py-3 {{ asset.gain_class }}">R$ {{ asset.gain }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+:root {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #1e293b;
+  background: #f1f5f9;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .layout.with-sidebar {
+    grid-template-columns: 1fr !important;
+  }
+
+  .preview-panel {
+    position: static !important;
+  }
+
+  .form-panel {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .version-sidebar {
+    width: 100%;
+    max-height: none;
+    position: static;
+    margin-bottom: 16px;
+  }
+
+  .sidebar-toggle {
+    display: none;
+  }
+
+  .ats-overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

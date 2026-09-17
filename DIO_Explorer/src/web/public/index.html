@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIO Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">
+      <span class="logo-icon">DIO</span>
+      <span class="logo-text">Explorer</span>
+    </div>
+    <nav>
+      <button class="nav-btn active" data-section="trilhas">
+        <span class="nav-icon">&#128218;</span> Trilhas
+      </button>
+      <button class="nav-btn" data-section="desafios">
+        <span class="nav-icon">&#127919;</span> Desafios
+      </button>
+      <button class="nav-btn" data-section="certificados">
+        <span class="nav-icon">&#127891;</span> Certificados
+      </button>
+      <button class="nav-btn" data-section="chat">
+        <span class="nav-icon">&#129302;</span> Assistente IA
+      </button>
+    </nav>
+    <div class="ollama-status" id="ollamaStatus">
+      <span class="status-dot offline"></span>
+      <span class="status-text">Verificando Ollama...</span>
+    </div>
+  </aside>
+
+  <main class="content">
+    <!-- Trilhas -->
+    <section id="section-trilhas" class="section active">
+      <div class="section-header">
+        <h1>Trilhas de Aprendizagem</h1>
+        <div class="filters">
+          <select id="filterTecnologia">
+            <option value="">Todas as tecnologias</option>
+          </select>
+        </div>
+      </div>
+      <div id="trilhasGrid" class="card-grid"></div>
+      <div id="trilhaDetalhe" class="detail-panel hidden"></div>
+    </section>
+
+    <!-- Desafios -->
+    <section id="section-desafios" class="section">
+      <div class="section-header">
+        <h1>Desafios de Código</h1>
+        <div class="filters">
+          <select id="filterDesafioTech">
+            <option value="">Todas</option>
+          </select>
+          <select id="filterDesafioNivel">
+            <option value="">Todos os níveis</option>
+            <option value="basico">Básico</option>
+            <option value="intermediario">Intermediário</option>
+          </select>
+          <button class="btn btn-primary" id="btnGerarDesafio">Gerar Desafio</button>
+        </div>
+      </div>
+      <div id="desafioAtual" class="desafio-panel hidden"></div>
+      <div id="desafiosGrid" class="card-grid"></div>
+    </section>
+
+    <!-- Certificados -->
+    <section id="section-certificados" class="section">
+      <div class="section-header">
+        <h1>Gerar Certificado</h1>
+      </div>
+      <div class="cert-form">
+        <div class="form-group">
+          <label for="inputNome">Nome do Aluno</label>
+          <input type="text" id="inputNome" placeholder="Ex: Maria Silva">
+        </div>
+        <div class="form-group">
+          <label for="inputTrilha">Trilha Concluída</label>
+          <select id="inputTrilha"></select>
+        </div>
+        <button class="btn btn-primary btn-lg" id="btnGerarCert">Gerar Certificado</button>
+        <div id="certResultado" class="cert-result hidden"></div>
+      </div>
+    </section>
+
+    <!-- Chat IA -->
+    <section id="section-chat" class="section">
+      <div class="section-header">
+        <h1>Assistente IA (Ollama - Qwen3)</h1>
+      </div>
+      <div class="chat-container">
+        <div id="chatMessages" class="chat-messages">
+          <div class="message assistant">
+            <div class="message-content">
+              Olá! Sou o assistente do DIO Explorer. Posso ajudá-lo com trilhas, desafios e dicas de programação. Como posso ajudar?
+            </div>
+          </div>
+        </div>
+        <div class="chat-input-area">
+          <textarea id="chatInput" placeholder="Digite sua pergunta..." rows="2"></textarea>
+          <button class="btn btn-primary" id="btnEnviarChat">Enviar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

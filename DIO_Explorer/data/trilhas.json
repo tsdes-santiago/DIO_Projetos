@@ -1,0 +1,580 @@
+{
+  "trilhas": [
+    {
+      "id": "javascript-basico",
+      "nome": "JavaScript Básico",
+      "tecnologia": "JavaScript",
+      "nivel": "basico",
+      "duracao": "25h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Introdução ao JavaScript",
+          "conteudo": "Variáveis, tipos de dados e operadores",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 2,
+          "titulo": "Controle de Fluxo",
+          "conteudo": "Condicionais e loops",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 3,
+          "titulo": "Funções",
+          "conteudo": "Declaração, parâmetros e retorno",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 4,
+          "titulo": "Arrays e Objetos",
+          "conteudo": "Estruturas de dados fundamentais",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 5,
+          "titulo": "DOM e Eventos",
+          "conteudo": "Manipulação do HTML e interatividade",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 6,
+          "titulo": "Projeto Final",
+          "conteudo": "Aplicação web completa",
+          "duracao": "3h"
+        }
+      ]
+    },
+    {
+      "id": "javascript-intermediario",
+      "nome": "JavaScript Intermediário",
+      "tecnologia": "JavaScript",
+      "nivel": "intermediario",
+      "duracao": "35h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Async/Await e Promises",
+          "conteudo": "Programação assíncrona",
+          "duracao": "6h"
+        },
+        {
+          "ordem": 2,
+          "titulo": "Manipulação do DOM Avançado",
+          "conteudo": "Event delegation, reatividade",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 3,
+          "titulo": "Fetch API e HTTP",
+          "conteudo": "Comunicação com backends",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 4,
+          "titulo": "Módulos ES6+",
+          "conteudo": "Import/export e organização de código",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 5,
+          "titulo": "Classes e POO",
+          "conteudo": "Programação orientada a objetos",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 6,
+          "titulo": "Design Patterns",
+          "conteudo": "Padrões de projeto em JS",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 7,
+          "titulo": "Projeto Fullstack",
+          "conteudo": "Aplicação completa com Node.js",
+          "duracao": "5h"
+        }
+      ]
+    },
+    {
+      "id": "react-basico",
+      "nome": "React Básico",
+      "tecnologia": "React",
+      "nivel": "basico",
+      "duracao": "30h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Introdução ao React",
+          "conteudo": "Componentes e JSX",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 2,
+          "titulo": "Props e Estado",
+          "conteudo": "Passagem de dados e useState",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 3,
+          "titulo": "Ciclo de Vida",
+          "conteudo": "useEffect e side effects",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 4,
+          "titulo": "Listas e Chaves",
+          "conteudo": "Renderização dinâmica",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 5,
+          "titulo": "Formulários",
+          "conteudo": "Controle de inputs e validação",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 6,
+          "titulo": "Roteamento",
+          "conteudo": "React Router v6",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 7,
+          "titulo": "Projeto Portfolio",
+          "conteudo": "Aplicação de portfolio completa",
+          "duracao": "3h"
+        }
+      ]
+    },
+    {
+      "id": "nodejs-basico",
+      "nome": "Node.js Básico",
+      "tecnologia": "Node.js",
+      "nivel": "basico",
+      "duracao": "28h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Introdução ao Node.js",
+          "conteudo": "Runtime, módulos e npm",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 2,
+          "titulo": "Sistema de Arquivos",
+          "conteudo": "Leitura e escrita de arquivos",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 3,
+          "titulo": "HTTP e Express",
+          "conteudo": "Servidores web e rotas",
+          "duracao": "6h"
+        },
+        {
+          "ordem": 4,
+          "titulo": "Middlewares",
+          "conteudo": "Cadeia de processamento",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 5,
+          "titulo": "Banco de Dados",
+          "conteudo": "Integração com MongoDB",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 6,
+          "titulo": "API REST Completa",
+          "conteudo": "CRUD completo com autenticação",
+          "duracao": "5h"
+        }
+      ]
+    },
+    {
+      "id": "python-basico",
+      "nome": "Python Básico",
+      "tecnologia": "Python",
+      "nivel": "basico",
+      "duracao": "30h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Primeiros Passos",
+          "conteudo": "Variáveis, entrada e saída",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 2,
+          "titulo": "Controle de Fluxo",
+          "conteudo": "if, for, while",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 3,
+          "titulo": "Funções",
+          "conteudo": "Definição e parâmetros",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 4,
+          "titulo": "Estruturas de Dados",
+          "conteudo": "Listas, tuplas e dicionários",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 5,
+          "titulo": "Manipulação de Arquivos",
+          "conteudo": "Leitura e escrita",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 6,
+          "titulo": "Projeto Automação",
+          "conteudo": "Scripts de automação",
+          "duracao": "7h"
+        }
+      ]
+    },
+    {
+      "id": "python-intermediario",
+      "nome": "Python Intermediário",
+      "tecnologia": "Python",
+      "nivel": "intermediario",
+      "duracao": "40h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "POO em Python",
+          "conteudo": "Classes, herança e polimorfismo",
+          "duracao": "6h"
+        },
+        {
+          "ordem": 2,
+          "titulo": "Decorators e Generators",
+          "conteudo": "Avançado em funções",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 3,
+          "titulo": "Tratamento de Erros",
+          "conteudo": "Exceções e validação",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 4,
+          "titulo": "Programação Assíncrona",
+          "conteudo": "asyncio e concorrência",
+          "duracao": "6h"
+        },
+        {
+          "ordem": 5,
+          "titulo": "Banco de Dados",
+          "conteudo": "SQLAlchemy e ORM",
+          "duracao": "6h"
+        },
+        {
+          "ordem": 6,
+          "titulo": "APIs REST",
+          "conteudo": "FastAPI e Flask",
+          "duracao": "6h"
+        },
+        {
+          "ordem": 7,
+          "titulo": "Testes",
+          "conteudo": "pytest e testes automatizados",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 8,
+          "titulo": "Projeto Completo",
+          "conteudo": "Aplicação fullstack",
+          "duracao": "3h"
+        }
+      ]
+    },
+    {
+      "id": "typescript-basico",
+      "nome": "TypeScript Básico",
+      "tecnologia": "TypeScript",
+      "nivel": "basico",
+      "duracao": "25h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Introdução ao TypeScript",
+          "conteudo": "Configuração e tipos primitivos",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 2,
+          "titulo": "Tipos Avançados",
+          "conteudo": "Union, intersection e enums",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 3,
+          "titulo": "Interfaces e Classes",
+          "conteudo": "Contratos e POO",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 4,
+          "titulo": "Generics",
+          "conteudo": "Tipos parametrizáveis",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 5,
+          "titulo": "Módulos e Namespaces",
+          "conteudo": "Organização de código",
+          "duracao": "3h"
+        },
+        {
+          "ordem": 6,
+          "titulo": "Projeto Prático",
+          "conteudo": "API com Express e TypeScript",
+          "duracao": "4h"
+        }
+      ]
+    },
+    {
+      "id": "java-basico",
+      "nome": "Java Básico",
+      "tecnologia": "Java",
+      "nivel": "basico",
+      "duracao": "35h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Introdução ao Java",
+          "conteudo": "JDK, JVM e Hello World",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 2,
+          "titulo": "Variáveis e Tipos",
+          "conteudo": "Primitivos e referência",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 3,
+          "titulo": "Controle de Fluxo",
+          "conteudo": "if/else, switch, loops",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 4,
+          "titulo": "Métodos",
+          "conteudo": "Declaração e passagem de parâmetros",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 5,
+          "titulo": "Arrays e Collections",
+          "conteudo": "List, Set, Map",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 6,
+          "titulo": "POO em Java",
+          "conteudo": "Classes, herança, polimorfismo",
+          "duracao": "6h"
+        },
+        {
+          "ordem": 7,
+          "titulo": "Projeto CRUD",
+          "conteudo": "Aplicação com Spring Boot",
+          "duracao": "6h"
+        }
+      ]
+    },
+    {
+      "id": "csharp-basico",
+      "nome": "C# Básico",
+      "tecnologia": "C#",
+      "nivel": "basico",
+      "duracao": "30h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Introdução ao C#",
+          "conteudo": ".NET, sintaxe básica",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 2,
+          "titulo": "Tipos e Variáveis",
+          "conteudo": "Value types e reference types",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 3,
+          "titulo": "Controle de Fluxo",
+          "conteudo": "Condicional e loops",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 4,
+          "titulo": "Métodos e Classes",
+          "conteudo": "Orientação a objetos",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 5,
+          "titulo": "Generics e LINQ",
+          "conteudo": "Consultas e tipos genéricos",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 6,
+          "titulo": "ASP.NET Básico",
+          "conteudo": "Web APIs com .NET",
+          "duracao": "5h"
+        },
+        {
+          "ordem": 7,
+          "titulo": "Projeto Final",
+          "conteudo": "API completa com Entity Framework",
+          "duracao": "3h"
+        }
+      ]
+    },
+    {
+      "id": "html-css-basico",
+      "nome": "HTML e CSS Básico",
+      "tecnologia": "HTML/CSS",
+      "nivel": "basico",
+      "duracao": "20h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Estrutura HTML",
+          "conteudo": "Tags semânticas e formulários",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 2,
+          "titulo": "CSS Básico",
+          "conteudo": "Seletores, propriedades e valores",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 3,
+          "titulo": "Layout com Flexbox",
+          "conteudo": "Alinhamento e distribuição",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 4,
+          "titulo": "Grid Layout",
+          "conteudo": "Layout bidimensional",
+          "duracao": "3h"
+        },
+        {
+          "ordem": 5,
+          "titulo": "Responsividade",
+          "conteudo": "Media queries e mobile first",
+          "duracao": "3h"
+        },
+        {
+          "ordem": 6,
+          "titulo": "Projeto Landing Page",
+          "conteudo": "Página completa e responsiva",
+          "duracao": "2h"
+        }
+      ]
+    },
+    {
+      "id": "sql-basico",
+      "nome": "SQL Básico",
+      "tecnologia": "SQL",
+      "nivel": "basico",
+      "duracao": "20h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Introdução ao SQL",
+          "conteudo": "Banco relacional e ER",
+          "duracao": "3h"
+        },
+        {
+          "ordem": 2,
+          "titulo": "DDL - Criação",
+          "conteudo": "CREATE, ALTER, DROP",
+          "duracao": "3h"
+        },
+        {
+          "ordem": 3,
+          "titulo": "DML - Manipulação",
+          "conteudo": "INSERT, UPDATE, DELETE",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 4,
+          "titulo": "Consultas com SELECT",
+          "conteudo": "Filtros, ordenação e agrupamento",
+          "duracao": "4h"
+        },
+        {
+          "ordem": 5,
+          "titulo": "JOINs",
+          "conteudo": "Inner, left, right e cross join",
+          "duracao": "3h"
+        },
+        {
+          "ordem": 6,
+          "titulo": "Subconsultas e Views",
+          "conteudo": "Consultas complexas",
+          "duracao": "3h"
+        }
+      ]
+    },
+    {
+      "id": "git-github",
+      "nome": "Git e GitHub",
+      "tecnologia": "Git",
+      "nivel": "basico",
+      "duracao": "15h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Introdução ao Git",
+          "conteudo": "Versionamento e instalação",
+          "duracao": "2h"
+        },
+        {
+          "ordem": 2,
+          "titulo": "Comandos Básicos",
+          "conteudo": "init, add, commit, status",
+          "duracao": "3h"
+        },
+        {
+          "ordem": 3,
+          "titulo": "Branches",
+          "conteudo": "Criação, merge e resolução de conflitos",
+          "duracao": "3h"
+        },
+        {
+          "ordem": 4,
+          "titulo": "GitHub",
+          "conteudo": "Repositórios, pull requests e issues",
+          "duracao": "3h"
+        },
+        {
+          "ordem": 5,
+          "titulo": "Fluxo de Trabalho",
+          "conteudo": "Git flow e boas práticas",
+          "duracao": "2h"
+        },
+        {
+          "ordem": 6,
+          "titulo": "Projeto Prático",
+          "conteudo": "Colaboração em projeto open source",
+          "duracao": "2h"
+        }
+      ]
+    }
+  ]
+}

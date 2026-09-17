@@ -1,0 +1,136 @@
+{
+  "desafios": [
+    {
+      "id": "js-basico-01",
+      "tecnologia": "JavaScript",
+      "nivel": "basico",
+      "titulo": "FizzBuzz",
+      "enunciado": "Crie uma função que receba um número n e retorne um array de 1 até n. Para múltiplos de 3, substitua pelo 'Fizz', para múltiplos de 5 por 'Buzz', e para múltiplos de ambos por 'FizzBuzz'.",
+      "exemplo_entrada": "15",
+      "exemplo_saida": "[1,2,'Fizz',4,'Buzz','Fizz',7,8,'Fizz','Buzz',11,'Fizz',13,14,'FizzBuzz']",
+      "dica": "Use o operador módulo (%) para verificar divisibilidade.",
+      "solucao_sugerida": "function fizzBuzz(n) {\n  const resultado = [];\n  for (let i = 1; i <= n; i++) {\n    if (i % 15 === 0) resultado.push('FizzBuzz');\n    else if (i % 3 === 0) resultado.push('Fizz');\n    else if (i % 5 === 0) resultado.push('Buzz');\n    else resultado.push(i);\n  }\n  return resultado;\n}"
+    },
+    {
+      "id": "js-basico-02",
+      "tecnologia": "JavaScript",
+      "nivel": "basico",
+      "titulo": "Inverter String",
+      "enunciado": "Crie uma função que receba uma string e retorne ela invertida, sem usar o método .reverse().",
+      "exemplo_entrada": "'hello'",
+      "exemplo_saida": "'olleh'",
+      "dica": "Use um loop que percorre a string de trás para frente.",
+      "solucao_sugerida": "function inverterString(str) {\n  let invertida = '';\n  for (let i = str.length - 1; i >= 0; i--) {\n    invertida += str[i];\n  }\n  return invertida;\n}"
+    },
+    {
+      "id": "js-basico-03",
+      "tecnologia": "JavaScript",
+      "nivel": "basico",
+      "titulo": "Fatorial",
+      "enunciado": "Crie uma função que receba um número n e retorne o fatorial de n (n!).",
+      "exemplo_entrada": "5",
+      "exemplo_saida": "120",
+      "dica": "O fatorial de 5 é 5*4*3*2*1.",
+      "solucao_sugerida": "function fatorial(n) {\n  if (n <= 1) return 1;\n  return n * fatorial(n - 1);\n}"
+    },
+    {
+      "id": "js-inter-01",
+      "tecnologia": "JavaScript",
+      "nivel": "intermediario",
+      "titulo": "Debounce",
+      "enunciado": "Implemente uma função de debounce que limita a execução de uma função a cada X milissegundos.",
+      "exemplo_entrada": "debounce(fn, 300)",
+      "exemplo_saida": "função executada no máximo a cada 300ms",
+      "dica": "Use setTimeout e clearTimeout.",
+      "solucao_sugerida": "function debounce(fn, delay) {\n  let timeoutId;\n  return function (...args) {\n    clearTimeout(timeoutId);\n    timeoutId = setTimeout(() => fn.apply(this, args), delay);\n  };\n}"
+    },
+    {
+      "id": "js-inter-02",
+      "tecnologia": "JavaScript",
+      "nivel": "intermediario",
+      "titulo": "Deep Clone",
+      "enunciado": "Implemente uma função de deep clone que crie uma cópia profunda de um objeto, incluindo objetos aninhados.",
+      "exemplo_entrada": "{a: 1, b: {c: 2}}",
+      "exemplo_saida": "{a: 1, b: {c: 2}} (cópia independente)",
+      "dica": "Use JSON.parse(JSON.stringify()) ou recursão.",
+      "solucao_sugerida": "function deepClone(obj) {\n  if (obj === null || typeof obj !== 'object') return obj;\n  if (Array.isArray(obj)) return obj.map(item => deepClone(item));\n  const clone = {};\n  for (const key in obj) {\n    if (obj.hasOwnProperty(key)) {\n      clone[key] = deepClone(obj[key]);\n    }\n  }\n  return clone;\n}"
+    },
+    {
+      "id": "python-basico-01",
+      "tecnologia": "Python",
+      "nivel": "basico",
+      "titulo": "Número Primo",
+      "enunciado": "Crie uma função que receba um número e retorne True se for primo, False caso contrário.",
+      "exemplo_entrada": "7",
+      "exemplo_saida": "True",
+      "dica": "Verifique se o número é divisível por qualquer número de 2 até a raiz quadrada dele.",
+      "solucao_sugerida": "def eh_primo(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True"
+    },
+    {
+      "id": "python-basico-02",
+      "tecnologia": "Python",
+      "nivel": "basico",
+      "titulo": "Contar Vogais",
+      "enunciado": "Crie uma função que receba uma string e retorne o número de vogais presentes.",
+      "exemplo_entrada": "'Python'",
+      "exemplo_saida": "2",
+      "dica": "Use uma lista de vogais e itere pela string.",
+      "solucao_sugerida": "def contar_vogais(texto):\n    vogais = 'aeiouAEIOU'\n    return sum(1 for char in texto if char in vogais)"
+    },
+    {
+      "id": "python-inter-01",
+      "tecnologia": "Python",
+      "nivel": "intermediario",
+      "titulo": "Comprehensions",
+      "enunciado": "Crie uma lista de comprehension que gere os quadrados dos números pares de 1 a 20.",
+      "exemplo_entrada": "ranges: 1-20",
+      "exemplo_saida": "[4, 16, 36, 64, 100, 144, 196, 256, 324, 400]",
+      "dica": "Use if para filtrar pares e **2 para o quadrado.",
+      "solucao_sugerida": "quadrados_pares = [x**2 for x in range(1, 21) if x % 2 == 0]"
+    },
+    {
+      "id": "react-basico-01",
+      "tecnologia": "React",
+      "nivel": "basico",
+      "titulo": "Contador de Cliques",
+      "enunciado": "Crie um componente React que exiba um contador de cliques com botões de incrementar e decrementar.",
+      "exemplo_entrada": "Componente funcional",
+      "exemplo_saida": "Botão +/- e valor atual",
+      "dica": "Use useState para gerenciar o estado do contador.",
+      "solucao_sugerida": "import { useState } from 'react';\n\nfunction Contador() {\n  const [count, setCount] = useState(0);\n  return (\n    <div>\n      <button onClick={() => setCount(count - 1)}>-</button>\n      <span>{count}</span>\n      <button onClick={() => setCount(count + 1)}>+</button>\n    </div>\n  );\n}"
+    },
+    {
+      "id": "node-basico-01",
+      "tecnologia": "Node.js",
+      "nivel": "basico",
+      "titulo": "API de Tarefas",
+      "enunciado": "Crie uma API REST simples com Express para gerenciar uma lista de tarefas (CRUD básico).",
+      "exemplo_entrada": "GET/POST/PUT/DELETE /tarefas",
+      "exemplo_saida": "JSON com lista de tarefas",
+      "dica": "Use um array em memória para armazenar as tarefas.",
+      "solucao_sugerida": "const express = require('express');\nconst app = express();\napp.use(express.json());\nlet tarefas = [];\n\napp.get('/tarefas', (req, res) => res.json(tarefas));\napp.post('/tarefas', (req, res) => {\n  tarefas.push(req.body);\n  res.status(201).json(req.body);\n});\n\napp.listen(3000);"
+    },
+    {
+      "id": "sql-basico-01",
+      "tecnologia": "SQL",
+      "nivel": "basico",
+      "titulo": "Consulta com JOIN",
+      "enunciado": "Escreva uma consulta SQL que retorne o nome dos clientes e os pedidos que eles fizeram, incluindo clientes sem pedidos.",
+      "exemplo_entrada": "Tabelas: clientes(id, nome), pedidos(id, cliente_id, valor)",
+      "exemplo_saida": "Lista de clientes com seus pedidos (ou NULL)",
+      "dica": "Use LEFT JOIN para incluir todos os clientes.",
+      "solucao_sugerida": "SELECT c.nome, p.valor\nFROM clientes c\nLEFT JOIN pedidos p ON c.id = p.cliente_id;"
+    },
+    {
+      "id": "html-css-01",
+      "tecnologia": "HTML/CSS",
+      "nivel": "basico",
+      "titulo": "Card de Produto",
+      "enunciado": "Crie um card de produto responsivo usando apenas HTML e CSS, com imagem, nome, preço e botão de comprar.",
+      "exemplo_entrada": "Estrutura HTML semântica",
+      "exemplo_saida": "Card estilizado e responsivo",
+      "dica": "Use Flexbox para alinhar os elementos e media queries para responsividade.",
+      "solucao_sugerida": "<div class=\"card\">\n  <img src=\"produto.jpg\" alt=\"Produto\">\n  <h3>Nome do Produto</h3>\n  <p class=\"preco\">R$ 99,90</p>\n  <button>Comprar</button>\n</div>\n\n<style>\n.card { border: 1px solid #ddd; border-radius: 8px; padding: 16px; max-width: 300px; }\n.card img { width: 100%; border-radius: 4px; }\n.preco { color: #2ecc71; font-weight: bold; }\n</style>"
+    }
+  ]
+}
